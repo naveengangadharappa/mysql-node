@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>this is mainlayout of node js</title>
+        <link rel="stylesheet" href="views/layouts/style.css">
+        <style type="text/css">
+    a{
+        background-color:darkolivegreen;
+        color:white;
+        padding:2%;
+        text-decoration-style: none;
+        font-style: none;
+    }
+    a:hover{
+        background-color:cadetblue;   
+    }
+    .navbar{
+        width:100%;
+        background-color:darkolivegreen;
+        padding-right:2%;
+        padding-top:2%;
+        padding-bottom:2%;
+    }
+	table{
+        width:90%;
+    }
+    th{
+        padding:1%;
+        background-color: darkolivegreen;
+    }
+    td{
+        padding:1%;
+        background-color:silver;
+    }
+    button{
+        border-radius: 15%;
+        background-color:teal;
+        color:white;
+        padding: 4px;
+        border-style: none;
+    }
+    input,select{
+        padding: 4px;
+        background-color:whitesmoke;
+        border-radius: 2px;
+        border-bottom-color: black;
+        border-top-style: none;
+        border-left-style: none;
+        border-right-style: none;
+        width:20%;
+    }
+  .errmsg{
+      padding: 2%;
+        background-color:darkturquoise;
+        border-radius: 2px;
+        color:black;
+        width:40%;
+    }
+    </style>
+    </head>
+    <body id='body-templet' bgcolor="white">
+        <center><h2>Welcome to My Node-Js Application</h2></center><hr></hr>
+<div class="navbar"><a href="/insert">Add users</a><a href="/users">User Details</a><a href="http://www.youtube.com">YouTube</a><a href="http://www.gmail.com">Gmail</a><a href="http://www.booksdealing.tk">Booksdealing</a><a href="http://www.google.co.in">Google</a>\</div>
+        <br><center><div id="main-div" style="background-color: burlywood; padding:1%; width:90%;overflow:scroll;">
+            {{{body}}}
+        </div></body></center>
+    </body>
+</html>

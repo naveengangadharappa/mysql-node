@@ -1,0 +1,44 @@
+<h3 style="background-color: darkcyan;"><hr></hr><b>Update User Details</b><hr></hr></h3>
+<form autocomplete="off" action="/insertuser" method="POST">
+{{#each data}}
+    Name :<input type="text" name="uname" placeholder="UserName" value={{this.username}}><br><br>
+    date of birth :<input type="date" name="udob" placeholder="yyyy-mm-dd" value={{this.dob}}><br><br>
+    Gender:<select name="ugender">
+         <option value="{{this.gender}}">{{this.gender}} </option>
+        <option value="Male">Male </option>
+        <option value="Female">Female </option>
+    </select><br><br>
+
+    Email:<input type="email" name="uemail" placeholder="Useremail" value={{this.email}}><br><br>
+    Country:<select name="ucountry">
+        <option value="{{this.country}}">{{this.country}}</option>
+        <option value="India">India </option>
+        <option value="America">America </option>
+        <option value="Austrialia">Austrialia </option>
+        <option value="England">England </option>
+    </select>
+    State:<select name="ustate">
+        <option value="{{this.state}}">{{this.state}} </option>
+        <option value="Karnataka">Karnataka </option>
+        <option value="Maharastra">Maharastra </option>
+        <option value="tamil nadu">tamil nadu</option>
+        <option value="Goa">Goa </option>
+        <option value="kerala">kerala</option> </option>
+        <option value="Andra">Andra</option>
+        <option value="Orissa">Orissa</option>
+        <option value="Bihar">Bihar </option>
+    </select><br><br>
+    District:<select name="udistrict">
+        <option value="{{this.district}}">{{this.district}}</option>
+        <option value="Bangaluru">Bangaluru </option>
+        <option value="Tumkuru">Tumkuru </option>
+        <option value="Mysore">Mysore </option>
+        <option value="gadag">gadag </option>
+    </select>
+    post:<input type="number" name="upin" placeholder="postal-pin" value={{this.postal}}><br><br>
+    Password<input type="password" name="upasswd" value={{this.password}}>
+    Retype password<input type="password" name="urpasswd" value={{this.password}}><br><br>
+    <input type="hidden" name="flg" value={{this.email}}><br><br>
+    <input type="submit">
+ {{/each}}  
+</form>

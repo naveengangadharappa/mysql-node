@@ -1,0 +1,11 @@
+#body-templet{
+    background-color: darkcyan;
+
+}
+#main-div{
+    background-color: burlywood;
+    height:50%;
+    width:50%;
+    padding:5%;
+    box-shadow: black;
+}

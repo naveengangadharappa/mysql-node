@@ -1,0 +1,26 @@
+<h3>{{viewtitle}}</h3>
+
+<table >
+    <thead >  
+        <tr>
+            <th>User-Name</th>
+            <th>User-Gender</th>
+            <th>User-D-O-B</th>
+            <th>User-email</th>
+            <th>User-Address</th>
+            <th>Edit/delete</th>
+        </tr>
+    </thead>
+    {{#each data}}
+    <tbody >
+        <tr>
+         <td>{{this.username}}</td> 
+         <td>{{this.gender}}</td>
+         <td>{{this.dob}}</td> 
+         <td>{{this.email}}</td>
+         <td>{{this.country}}, {{this.state}}, {{this.district}}, {{this.postal}}</td> 
+         <td> <a href="/update/{{this.email}}" ><b>Edit</b></a><a href="/delete/{{this.email}}" onclick="return confirm('Are you shure to delete this user ??');" ><b>Delete</b></a></td> 
+        </tr>
+    </tbody> 
+    {{/each}}   
+</table>
